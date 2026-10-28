@@ -1,8 +1,16 @@
 #include "vga.h"
+#include "vga_lib.h"
+
+
 
 void vga_set_mode(uint8_t mode)
 {
-
+    _asm
+    {
+        mov ah, SET_MODE
+        mov al, mode
+        int SET_VIDEO_MODE_HANDLER
+    }
 }
 
 void vga_vertical_sync()

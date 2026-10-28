@@ -1,0 +1,22 @@
+#ifndef VGA_LIB_H
+#define VGA_LIB_H
+
+
+#define SET_VIDEO_MODE_HANDLER 0x10
+#define SET_MODE 0x00   // AH argument
+
+// VVIDEO MODES
+#define TEXT_LOWRES  0x00
+#define TEXT_HIGHRES 0x03
+#define GRAPHICS_16COLORS  0x12
+#define GRAPHICS_256COLORS 0x13
+
+// REGISTER ADDRESSES
+#define PALETTE_MASK      0x03C6
+#define READ_COLOR_INDEX  0x03C7
+#define WRITE_COLOR_INDEX 0x03C8
+#define RBG_DATA          0x03C9
+#define INPUT_STATUS_REG1 0x03DA
+
+
+#endif
