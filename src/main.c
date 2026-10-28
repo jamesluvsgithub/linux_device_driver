@@ -95,10 +95,10 @@ int main()
             left_clicked = false;
             exit_clicked = true;
         }
-        // If both buttons are released, and previously both were down, we're done.
+        // If both buttons are released, and previously both were down, exit.
         else if (!bios.left && !bios.right && exit_clicked)
             active = false;
-        // Otherwise, if the left button is down, note it; when it is released, we'll process the data.
+        // If the left button is down, note it; when it is released, process the data.
         else if (bios.left)
             left_clicked = true;
         // If the left button is up, but it was pressed before, process data and reset.

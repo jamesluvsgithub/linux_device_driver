@@ -18,7 +18,6 @@ bool mouse_reset(void)
         return false;
     }
 
-    // TODO: finish initializing mouse
     return true;
 }
 

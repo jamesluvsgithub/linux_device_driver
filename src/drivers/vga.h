@@ -30,7 +30,7 @@ void vga_vertical_sync();
  * 
  * @return None.
  */
-void vga_set_pallete_mask(uint8_t mask);
+void vga_set_palette_mask(uint8_t mask);
 
 /**
  * @brief Sets palette entry at index to the inputted RGB values.
